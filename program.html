@@ -7,23 +7,22 @@
   <meta name="description" content="ICASA 2026 program agenda. A full day of invited talks, contributed talks, posters, and panel discussion.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- ===== Navigation ===== -->
-  <nav class="navbar" id="navbar">
+  <nav class="navbar">
     <div class="container">
       <a href="index.html" class="nav-logo">ICASA<span>'26</span></a>
       <div class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
-        <a href="call-for-papers.html">Call for Papers</a>
         <a href="program.html" class="active">Program</a>
         <a href="speakers.html">Speakers</a>
         <a href="mailto:contact@statsupai.org">Contact</a>
       </div>
-      <div class="nav-toggle" id="navToggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
+      <div class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
         <span></span>
         <span></span>
         <span></span>
@@ -39,119 +38,105 @@
     </div>
   </section>
 
-  <!-- ===== Schedule Section ===== -->
-  <section class="schedule" id="schedule">
+  <!-- ===== Schedule ===== -->
+  <section class="schedule">
     <div class="container">
-      <h2 class="section-title">Schedule</h2>
-      <p class="section-subtitle">
-        All times are in Eastern Time (ET). The program is subject to minor adjustments.
-      </p>
-      <div class="timeline">
+      <div class="glass-card" style="padding: 48px 40px;">
+        <h2 class="section-title">Schedule</h2>
+        <p class="section-subtitle">All times are in Eastern Time (ET). Subject to minor adjustments.</p>
 
-        <div class="timeline-item break">
-          <div class="timeline-time"><span>8:00 AM</span></div>
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Breakfast</h4>
-            <p>Registration and morning refreshments.</p>
+        <div class="timeline">
+
+          <div class="timeline-item break">
+            <div class="timeline-time">8:00 AM</div>
+            <div class="timeline-body">
+              <h4>Breakfast</h4>
+              <p>Registration and morning refreshments.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-time"><span>8:55 AM</span></div>
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>StatsUpAI Chair Address</h4>
-            <p>Opening remarks from the StatsUpAI chair.</p>
+          <div class="timeline-item">
+            <div class="timeline-time">8:55 AM</div>
+            <div class="timeline-body">
+              <h4>StatsUpAI Chair Address</h4>
+              <p>Opening remarks.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-time"><span>9:00 AM</span></div>
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Invited Talk</h4>
-            <p>Speaker to be announced.</p>
-            <span class="tag tag-talk">Invited</span>
+          <div class="timeline-item">
+            <div class="timeline-time">9:00 AM</div>
+            <div class="timeline-body">
+              <h4>Invited Talk</h4>
+              <p>Speaker to be announced.</p>
+              <span class="tag tag-talk">Invited</span>
+            </div>
           </div>
-        </div>
 
-        <div class="timeline-item break">
-          <div class="timeline-time"><span>10:00 AM</span></div>
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Coffee Break</h4>
-            <p>Refreshments and informal networking.</p>
+          <div class="timeline-item break">
+            <div class="timeline-time">10:00 AM</div>
+            <div class="timeline-body">
+              <h4>Coffee Break</h4>
+            </div>
           </div>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-time"><span>10:15 AM</span></div>
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Contributed Talks</h4>
-            <p>Selected presentations from accepted papers.</p>
-            <span class="tag tag-contributed">Contributed</span>
+          <div class="timeline-item">
+            <div class="timeline-time">10:15 AM</div>
+            <div class="timeline-body">
+              <h4>Contributed Talks</h4>
+              <p>Selected presentations from accepted papers.</p>
+              <span class="tag tag-contributed">Contributed</span>
+            </div>
           </div>
-        </div>
 
-        <div class="timeline-item break">
-          <div class="timeline-time"><span>12:00 PM</span></div>
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Lunch Break</h4>
-            <p>Provided lunch with opportunities for discussion.</p>
+          <div class="timeline-item break">
+            <div class="timeline-time">12:00 PM</div>
+            <div class="timeline-body">
+              <h4>Lunch Break</h4>
+            </div>
           </div>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-time"><span>1:30 PM</span></div>
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Contributed Talks</h4>
-            <p>Afternoon session of selected presentations.</p>
-            <span class="tag tag-contributed">Contributed</span>
+          <div class="timeline-item">
+            <div class="timeline-time">1:30 PM</div>
+            <div class="timeline-body">
+              <h4>Contributed Talks</h4>
+              <p>Afternoon session of selected presentations.</p>
+              <span class="tag tag-contributed">Contributed</span>
+            </div>
           </div>
-        </div>
 
-        <div class="timeline-item break">
-          <div class="timeline-time"><span>3:00 PM</span></div>
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Coffee Break</h4>
-            <p>Refreshments and informal networking.</p>
+          <div class="timeline-item break">
+            <div class="timeline-time">3:00 PM</div>
+            <div class="timeline-body">
+              <h4>Coffee Break</h4>
+            </div>
           </div>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-time"><span>3:15 PM</span></div>
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Poster Session</h4>
-            <p>Poster presentations from accepted papers.</p>
-            <span class="tag tag-poster">Posters</span>
+          <div class="timeline-item">
+            <div class="timeline-time">3:15 PM</div>
+            <div class="timeline-body">
+              <h4>Poster Session</h4>
+              <p>Poster presentations from accepted papers.</p>
+              <span class="tag tag-poster">Posters</span>
+            </div>
           </div>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-time"><span>4:15 PM</span></div>
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Panel Discussion</h4>
-            <p>Open discussion on the future of application-driven statistics and AI.</p>
-            <span class="tag tag-panel">Panel</span>
+          <div class="timeline-item">
+            <div class="timeline-time">4:15 PM</div>
+            <div class="timeline-body">
+              <h4>Panel Discussion</h4>
+              <p>The future of application-driven statistics and AI.</p>
+              <span class="tag tag-panel">Panel</span>
+            </div>
           </div>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-time"><span>5:00 PM</span></div>
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Adjourn</h4>
-            <p>End of conference.</p>
+          <div class="timeline-item">
+            <div class="timeline-time">5:00 PM</div>
+            <div class="timeline-body">
+              <h4>Adjourn</h4>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
   </section>
@@ -162,27 +147,23 @@
       <div class="footer-content">
         <div class="footer-brand">
           <h3>ICASA<span>'26</span></h3>
-          <p>
-            The 1st International Conference on Application-Driven Statistics and AI. Enhancing the role of statisticians in solving real problems empowered by AI.
-          </p>
+          <p>The 1st International Conference on Application-Driven Statistics and AI.</p>
         </div>
         <div class="footer-links">
           <h4>Pages</h4>
           <a href="index.html">Home</a>
-          <a href="call-for-papers.html">Call for Papers</a>
           <a href="program.html">Program</a>
           <a href="speakers.html">Speakers</a>
         </div>
         <div class="footer-contact">
           <h4>Contact</h4>
-          <p>For inquiries about the conference:</p>
           <p><a href="mailto:contact@statsupai.org">contact@statsupai.org</a></p>
-          <p style="margin-top: 16px;">Harvard University<br>Cambridge, MA</p>
+          <p style="margin-top: 8px;">Harvard University, Cambridge, MA</p>
         </div>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 ICASA. All rights reserved.</p>
-        <p>In association with <a href="https://StatsUpAI.org" style="color: var(--gold-light);">StatsUpAI.org</a></p>
+        <p>In association with <a href="https://StatsUpAI.org">StatsUpAI.org</a></p>
       </div>
     </div>
   </footer>

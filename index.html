@@ -7,23 +7,22 @@
   <meta name="description" content="The 1st International Conference on Application-Driven Statistics and AI (ICASA) — August 1, 2026, Harvard University, Cambridge, MA.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- ===== Navigation ===== -->
-  <nav class="navbar" id="navbar">
+  <nav class="navbar">
     <div class="container">
       <a href="index.html" class="nav-logo">ICASA<span>'26</span></a>
       <div class="nav-links" id="navLinks">
         <a href="index.html" class="active">Home</a>
-        <a href="call-for-papers.html">Call for Papers</a>
         <a href="program.html">Program</a>
         <a href="speakers.html">Speakers</a>
         <a href="mailto:contact@statsupai.org">Contact</a>
       </div>
-      <div class="nav-toggle" id="navToggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
+      <div class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
         <span></span>
         <span></span>
         <span></span>
@@ -31,97 +30,83 @@
     </div>
   </nav>
 
-  <!-- ===== Hero Section ===== -->
-  <section class="hero" id="home">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <div class="hero-badge">1st International Conference</div>
-      <h1>Application-Driven <span>Statistics and AI</span></h1>
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container">
+      <h1>1st International Conference on<br>Application-Driven <span>Statistics &amp; AI</span></h1>
       <p class="hero-description">
         ICASA is a research conference dedicated to enhancing the role of statisticians in solving real problems empowered by AI. It covers a broad range of research at the interface of statistics, machine learning, data science, and AI.
       </p>
       <div class="hero-meta">
         <div class="hero-meta-item">
-          <div class="icon">&#128197;</div>
+          <span class="icon">&#128197;</span>
           <span>August 1, 2026</span>
         </div>
         <div class="hero-meta-item">
-          <div class="icon">&#128205;</div>
+          <span class="icon">&#128205;</span>
           <span>Harvard University, Cambridge, MA</span>
         </div>
       </div>
       <div class="hero-buttons">
-        <a href="call-for-papers.html" class="btn btn-primary">Submit Your Work &#8594;</a>
+        <a href="#call-for-papers" class="btn btn-primary">Submit Your Work &#8594;</a>
         <a href="program.html" class="btn btn-outline">View Program</a>
       </div>
     </div>
-    <div class="hero-scroll">
-      <span></span>
-    </div>
   </section>
 
-  <!-- ===== About Section ===== -->
-  <section class="about" id="about">
+  <!-- ===== Call for Papers ===== -->
+  <section class="section" id="call-for-papers">
     <div class="container">
-      <h2 class="section-title">About ICASA</h2>
-      <p class="section-subtitle">
-        Bridging the gap between statistics and artificial intelligence through application-driven research.
-      </p>
+      <div class="glass-card" style="padding: 48px 40px;">
+        <h2 class="section-title">Call for Papers</h2>
+        <p class="section-subtitle">
+          We invite researchers, industry practitioners, and students to submit their latest work. Join us in shaping the future of application-driven statistics and AI.
+        </p>
 
-      <div class="about-content">
-        <div class="about-text">
-          <h3>Enhancing Statistics with AI</h3>
-          <p>
-            The International Conference on Application-Driven Statistics and AI (ICASA) is a one-day research conference that brings together researchers, industry practitioners, and students working at the intersection of statistics, machine learning, data science, and AI.
-          </p>
-          <p>
-            With a focus on problems motivated by real-world applications, ICASA provides a platform for sharing innovative methods, tools, and insights that advance both statistical practice and AI capabilities.
-          </p>
-        </div>
-        <div class="about-visual">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-            <div style="background: var(--off-white); border-radius: 16px; padding: 32px 24px; text-align: center; border: 1px solid var(--gray-200);">
-              <span style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 700; color: var(--blue-accent); display: block; line-height: 1; margin-bottom: 8px;">1</span>
-              <span style="font-size: 0.875rem; color: var(--gray-500); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Day Event</span>
-            </div>
-            <div style="background: var(--off-white); border-radius: 16px; padding: 32px 24px; text-align: center; border: 1px solid var(--gray-200);">
-              <span style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 700; color: var(--blue-accent); display: block; line-height: 1; margin-bottom: 8px;">&#8734;</span>
-              <span style="font-size: 0.875rem; color: var(--gray-500); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Ideas</span>
-            </div>
+        <!-- Key Dates as simple list -->
+        <div class="dates-list" style="margin-bottom: 48px;">
+          <div class="date-row">
+            <span class="date-label">Paper Submission</span>
+            <span class="date-value">May 1, 2026</span>
+          </div>
+          <div class="date-row">
+            <span class="date-label">Paper Acceptance</span>
+            <span class="date-value">May 25, 2026</span>
+          </div>
+          <div class="date-row">
+            <span class="date-label">Presentation Confirmation</span>
+            <span class="date-value">June 1, 2026</span>
+          </div>
+          <div class="date-row">
+            <span class="date-label">Conference Registration</span>
+            <span class="date-value">June 15, 2026</span>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ===== Key Dates Section ===== -->
-  <section class="key-dates" id="dates">
-    <div class="container">
-      <h2 class="section-title">Key Dates</h2>
-      <p class="section-subtitle">
-        Mark your calendar for these important deadlines. All deadlines are at 11:59 PM Anywhere on Earth (AoE).
-      </p>
+        <!-- Topics of Interest -->
+        <h3 style="font-size: 1.375rem; font-weight: 700; text-align: center; margin-bottom: 8px; color: var(--text-primary); letter-spacing: -0.01em;">Topics of Interest</h3>
+        <p style="text-align: center; color: var(--text-secondary); font-size: 0.9375rem; max-width: 580px; margin: 0 auto 32px; line-height: 1.6;">
+          We are soliciting paper submissions on all topics related to the interface of AI and statistics, with a particular focus on problems motivated by applications.
+        </p>
 
-      <div class="dates-grid">
-        <div class="date-card">
-          <span class="date-icon">&#128196;</span>
-          <h3>Paper Submission</h3>
-          <div class="date-value">May 1, 2026</div>
+        <div class="topics-flex">
+          <div class="topic-tag">Foundation models, generative models &amp; statistical perspectives (language models, diffusion models, etc.)</div>
+          <div class="topic-tag">Improving the reliability of AI through statistical methods (diagnostics, uncertainty quantification, conformal prediction, calibration, etc.)</div>
+          <div class="topic-tag">AI evaluation</div>
+          <div class="topic-tag">Interventions &amp; experiment design for ML and AI</div>
+          <div class="topic-tag">Applications of data-driven methodology to scientific &amp; business areas (biomedical, social, physical sciences, etc.)</div>
+          <div class="topic-tag">Novel software &amp; workflow to enhance researcher productivity</div>
+          <div class="topic-tag">AI-enhanced statistical data analysis tools</div>
         </div>
-        <div class="date-card">
-          <span class="date-icon">&#9989;</span>
-          <h3>Paper Acceptance</h3>
-          <div class="date-value">May 25, 2026</div>
-        </div>
-        <div class="date-card">
-          <span class="date-icon">&#127908;</span>
-          <h3>Presentation Confirmation</h3>
-          <div class="date-value">June 1, 2026</div>
-        </div>
-        <div class="date-card">
-          <span class="date-icon">&#127915;</span>
-          <h3>Conference Registration</h3>
-          <div class="date-value">June 15, 2026</div>
+
+        <!-- Submission Info -->
+        <div class="submission-box" style="margin-top: 40px; text-align: center;">
+          <p>
+            Paper submissions should be made at the OpenReview submission portal (link coming soon) following the submission instructions outlined at the link.
+          </p>
+          <p>
+            <strong>Fast track to journal acceptance:</strong> Selected papers will be considered for fast-track publication in JASA Applications &amp; Case Studies (JASA A&amp;CS).
+          </p>
         </div>
       </div>
     </div>
@@ -133,27 +118,23 @@
       <div class="footer-content">
         <div class="footer-brand">
           <h3>ICASA<span>'26</span></h3>
-          <p>
-            The 1st International Conference on Application-Driven Statistics and AI. Enhancing the role of statisticians in solving real problems empowered by AI.
-          </p>
+          <p>The 1st International Conference on Application-Driven Statistics and AI.</p>
         </div>
         <div class="footer-links">
           <h4>Pages</h4>
           <a href="index.html">Home</a>
-          <a href="call-for-papers.html">Call for Papers</a>
           <a href="program.html">Program</a>
           <a href="speakers.html">Speakers</a>
         </div>
         <div class="footer-contact">
           <h4>Contact</h4>
-          <p>For inquiries about the conference:</p>
           <p><a href="mailto:contact@statsupai.org">contact@statsupai.org</a></p>
-          <p style="margin-top: 16px;">Harvard University<br>Cambridge, MA</p>
+          <p style="margin-top: 8px;">Harvard University, Cambridge, MA</p>
         </div>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 ICASA. All rights reserved.</p>
-        <p>In association with <a href="https://StatsUpAI.org" style="color: var(--gold-light);">StatsUpAI.org</a></p>
+        <p>In association with <a href="https://StatsUpAI.org">StatsUpAI.org</a></p>
       </div>
     </div>
   </footer>
