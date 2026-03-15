@@ -20,7 +20,7 @@ if class_val >= 1 && class_val <= num_classes
 end
 end
 % 1c. Stratified BALANCED Split (The key to breaking the 12.5% plateau)
-num_train_per_class = 200;
+num_train_per_class = 100;
 train_idx = [];
 test_idx = [];
 rng(42); % Seed for reproducibility
@@ -51,8 +51,8 @@ learning_rate = 0.2;
 momentum = 0.3;
 stop_criterion_max = 0.05; % Target misclassification (1% - 5%)
 %% 3. Weight Initialization
-% STRICTLY drawn from U(-0.1, 0.1)
-a = -0.1; b = 0.1;
+% Xavier/Glorot initialization for tanh: U(-sqrt(6/(fan_in+fan_out)), ...)
+a = -0.5; b = 0.5;
 W1 = a + (b-a) .* rand(hidden_nodes, input_dim + 1);
 W2 = a + (b-a) .* rand(output_dim, hidden_nodes + 1);
 dW1_prev = zeros(size(W1));
@@ -60,7 +60,7 @@ dW2_prev = zeros(size(W2));
 %% 4. Training Loop (Tracking Learning Steps)
 disp('Starting on-line training...');
 N_train = size(train_data, 1);
-max_epochs = 100;
+max_epochs = 40;
 total_steps = 0;
 learning_history = [];
 for epoch = 1:max_epochs
@@ -89,7 +89,7 @@ if pred_class ~= true_class
             errors_this_epoch = errors_this_epoch + 1;
 end
 % --- BACKWARD PASS ---
-        delta2 = e .* (y2 .* (1 - y2));
+        delta2 = e .* (y2 .* (1 - y2) + 0.01);
         W2_no_bias = W2(:, 2:end);
         delta1 = (W2_no_bias' * delta2) .* (1 - y1.^2); % Tanh derivative
 % --- WEIGHT UPDATE ---
