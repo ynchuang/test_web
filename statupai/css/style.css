@@ -15,6 +15,7 @@ body {
 	font-weight:300;
 	line-height:1.6em;
 	color:#656565;
+	padding-bottom: 70px;
 }
 
 a:active {
@@ -152,9 +153,11 @@ header .navbar-nav > li  {
 header  .navbar-nav > li > a {
     padding-bottom: 6px;
     padding-top: 5px;
-    margin-left: 2px;
+    margin-left: 6px;
+    margin-right: 6px;
     line-height: 30px;
 	font-weight: 700;
+    border-bottom: 3px solid transparent;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
@@ -174,12 +177,15 @@ header .nav .caret {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  background-color: #006400;
+  background-color: transparent;
+  color: #006400;
+  border-bottom: 3px solid #006400;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color:  #006400;
+  background-color: transparent;
+  color: #006400;
 }	
 	
 
@@ -268,7 +274,8 @@ header ul.nav li ul li a {
 
 .navbar .nav a:hover {
 	background:none;
-	color: #14A085 !important;
+	color: #008B8B !important;
+	border-bottom: 3px solid #008B8B;
 }
 
 .navbar .nav > .active > a,.navbar .nav > .active > a:hover {
@@ -308,7 +315,7 @@ header ul.nav li ul li ul {
   content:none;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-color: #14A085;
+color: #006400;
 }
 
 
@@ -350,18 +357,25 @@ left:0px;
 .flex-direction-nav .flex-next{ 
 right:0px;
 }
-.flex-caption {zoom:0;
+.flex-caption {
   color: #1C1D21;
   margin: 0 auto;
-  padding: 1px;
+  padding: 20px 30px;
   position: absolute;
   vertical-align: bottom;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.26);
-  bottom: 5%;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(12px) saturate(150%);
+  backdrop-filter: blur(12px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  bottom: 8%;
   display: block;
-  left: 0;
-  right: 0;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  max-width: 600px;
+  width: 90%;
   }
 .flex-caption h3 {color: #fff; letter-spacing: 1px; margin-bottom: 8px; text-transform: uppercase;}
 .flex-caption p {margin: 0 0 15px;}
@@ -404,7 +418,7 @@ font-size: 36px;
 font-weight: 700;
 } 
 .testimonial-solid {
-padding: 50px 0 60px 0;
+padding: 60px 0 70px 0;
 margin: 0 0 0 0;
 background: #EFEFEF;
 text-align: center;
@@ -450,10 +464,10 @@ bottom: -30px;
 }
 
 .item_introtext {
-    background-color: rgba(254, 254, 255, 0.66);
+    background-color: transparent;
     margin: 0 auto;
     display: inline-block;
-    padding: 25px;
+    padding: 20px 30px;
 }
 .item_introtext span {
     font-size: 20px;
@@ -495,7 +509,7 @@ font-style: italic;
 } 
 section.callaction {
 	background:#fff;
-	padding:50px 0 0 0;
+	padding:60px 0 40px 0;
 }
 
 
@@ -816,7 +830,7 @@ form#commentform textarea {
 	height: 91%;
 	opacity: 0.50;
 	filter: alpha(opacity=80);
-	background: #14A085;
+	background: #008080;
 }
 
 .item-thumbs .hover-wrap .overlay-img-thumb {
@@ -852,7 +866,7 @@ margin-right: 15px;
 ul.portfolio-categ li a{
 	display:block;
 	padding: 8px 20px;
-	color: #14A085;
+	color: #008080;
 }
 ul.portfolio-categ li.active{
 border: 1px solid #D7D8D6;
@@ -1021,7 +1035,7 @@ ul.link-list li{
 	list-style:none;
 }
 footer{
-background: #008B8B;
+background: #008080;
 }
 footer ul.link-list li a{
 	color: #FFFFFF;
@@ -1265,7 +1279,7 @@ background: #F9F9F9;
 .pricing-box-item .pricing-terms  h6 {
 	font-style:italic;
 	margin-top:10px;
-	color: #14A085;
+	color: #008080;
 	font-size: 22px;
 	font-family:'Noto Serif', serif;
 }
@@ -1463,7 +1477,8 @@ a.scrollup i:hover {
 
 /* Alternatively, you can increase the top padding of the current section */
 #content {
-    padding-top: 100px; /* Adjust the value as needed */
+    padding-top: 80px;
+    padding-bottom: 60px;
 }
 .skill-home .box-area {
     padding: 20px;
@@ -1480,18 +1495,20 @@ a.scrollup i:hover {
 
 .skill-home .btn-info {
     color: #fff;
-    background-color: 	#008B8B;
-    border-color: #46b8da;
-    padding: 10px 20px;
+    background-color: #008080;
+    border-color: #008080;
+    padding: 10px 24px;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .skill-home .btn-info:hover, .skill-home .btn-info:focus {
-    background-color:	#2F4F4F;
-    border-color: #269abc;
+    background-color: #006060;
+    border-color: #006060;
+    transform: translateY(-1px);
 }
 
 .floatleft {
@@ -1630,7 +1647,7 @@ article img.pull-right, article .align-right{
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover {
 background: none;
 font-weight: 700;
-color: #26AFF0;
+color: #008080;
 }
 	header .navbar-nav > li {
 padding-bottom: 0px;
@@ -1831,10 +1848,10 @@ padding:50px 0
 
 /* Call to Action Section Styles */
 .callaction {
-    background-color: #f4f4f4;  /* Light grey background for subtle contrast */
-    padding: 40px 0;  /* Top and bottom padding for breathing space */
-    border-top: 1px solid #e5e5e5;  /* Adds a subtle border to the top for definition */
-    border-bottom: 1px solid #e5e5e5;  /* Adds a subtle border to the bottom */
+    background-color: #f8f9fa;
+    padding: 60px 0 40px 0;
+    border-top: 3px solid #008080;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .aligncenter {
@@ -1842,20 +1859,21 @@ padding:50px 0
 }
 
 .aligncenter h1 {
-    color: #333;  /* Dark grey color for the title for better readability */
-    font-size: 28px;  /* Increased font size for emphasis */
-    margin-bottom: 20px;  /* Space below the title */
-    font-weight: bold;  /* Makes the title bold */
+    color: #008080;
+    font-size: 30px;
+    margin-bottom: 24px;
+    font-weight: bold;
 }
 
 .aligncenter strong {
-    display: block;  /* Ensures the text is in block format */
-    font-size: 18px;  /* Font size for the strong tag */
-    color: #666;  /* Darker text color for the detailed text */
-    line-height: 1.6;  /* Increases line height for better readability */
-    max-width: 1200px;  /* Max width to control line length */
-    margin: 0 auto;  /* Centers the block */
-    padding: 0 15px;  /* Padding on both sides for padding in smaller screens */
+    display: block;
+    font-size: 18px;
+    color: #555;
+    font-weight: 400;
+    line-height: 1.8;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
 /* Responsive spacer for aesthetic spacing in mobile view */
@@ -2095,5 +2113,91 @@ section {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transform: scale(0.98);  /* 稍微缩小 */
     border-color: #0056b3;  /* 深蓝色边框 */
+}
+
+/* Frosted glass fallback for older browsers */
+@supports not (backdrop-filter: blur(12px)) {
+  .flex-caption {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+}
+
+/* ====== REDESIGN: Flexbox Card Layout ====== */
+.skill-home-solid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.skill-home-solid > .col-md-3 {
+    display: flex;
+    flex: 1 1 220px;
+    max-width: 25%;
+    padding: 0 10px;
+    float: none;
+}
+
+.skill-home .box-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 25px 20px 20px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    margin-top: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-home .box-area:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+.skill-home .box-area img {
+    display: block;
+    margin: 0 auto 15px;
+    max-width: 70%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.skill-home .box-area h3 {
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.skill-home .box-area p {
+    flex-grow: 1;
+    line-height: 1.6;
+    color: #444;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.skill-home .box-area .btn-info {
+    align-self: center;
+    margin-top: auto;
+}
+
+/* Responsive card layout */
+@media (max-width: 991px) {
+    .skill-home-solid > .col-md-3 {
+        max-width: 48%;
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 767px) {
+    .skill-home-solid > .col-md-3 {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
 }
 
